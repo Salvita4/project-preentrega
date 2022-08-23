@@ -578,7 +578,7 @@ video{
     }
 
     li .encabezado__navBar--button:hover{
-        font-size: x-large;
+        font-size: 2rem;
         background-color: rgba(214, 208, 208, 0.534);
         border-radius: 10px;
         
@@ -726,6 +726,9 @@ video{
 @media(min-width: 1400px){
 
     /*              <<<<<<<<<<<<<<<<<<<<<<<<<<INDEX>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    .encabezado__navBar--button{
+        font-size: 1.5rem;
+    }
     .slide{
         overflow-x: hidden;
     }
