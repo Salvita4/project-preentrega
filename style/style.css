@@ -14,7 +14,6 @@ a{text-decoration: none;}
 
 /*                  --------------------MOBILE--------------------                    */
 
-
 /*              <<<<<<<<<<<<<<<<<<<<<<<<<<INDEX>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 
 html, 
@@ -42,7 +41,7 @@ main{
 }
 
 .encabezado__titulo{
-    color: #FBEA39 ;
+    color: #FBEA39;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.5rem;
     margin-top: 0.4em;
@@ -182,10 +181,11 @@ main{
 .pieDePagina__section{
     margin-bottom: 1em;
     padding-left: 0;
+    margin-left: 1em;
 }
 
 .pieDePagina__section__titulo{
-    color: #FAAC2E; 
+    color: #f8e61d; 
     font-size: x-large;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 0.5em;
@@ -397,8 +397,6 @@ textarea{
 
 /*              <<<<<<<<<<<<<<<<<<<<<<<<<<GALERIA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 
-
-
 .seccionImg{
     margin-bottom: 1em;
     padding: 1em;
@@ -461,17 +459,18 @@ video{
 
     .nov{
         flex-direction: row;
+        justify-content: space-around;
         overflow-x: scroll;
         margin-bottom: 0;
+    }
+
+    .nov__img{
+        height: 85vh;
     }
     
 /*              <<<<<<<<<<<<<<<<<<<<<<<<<<INDEX>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 
 /*              <<<<<<<<<<<<<<<<<<<<<<<<<<CONTACTO>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
-    .layout--contacto{
-        grid-template-rows: 15vh 5.5vh 65% 5.5vh 20vh;
-    }
-
     .formulario{
     border-width: 10px;
     }
@@ -503,17 +502,6 @@ video{
 
 
 /*              <<<<<<<<<<<<<<<<<<<<<<<<<<GALERIA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
-    .layout--galeria{
-        grid-template-rows: 15vh 5.5vh 93% 5.5vh 20vh;
-    }
-
-    .seccionImg{
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-
-
     .seccionImg__img{   
         width: 60vw;
     }
@@ -527,7 +515,6 @@ video{
         border: 20px solid transparent;
         border-image: url(../images/utilidad-tres.jpeg) 30 fill;
     }
-
 
 /*              <<<<<<<<<<<<<<<<<<<<<<<<<<GALERIA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 
@@ -580,6 +567,7 @@ video{
     .encabezado__navBar{
         width: 60vw;
         display: flex;
+        justify-content: space-evenly;
         margin-right: 1em;
         overflow-x: hidden;
     }
@@ -634,8 +622,11 @@ video{
         margin-top: 2em;
     }
 
+    .bi-caret-up{
+        transition: 0.6s all ease-in-out;
+    }
     .bi-caret-up:hover{
-        font-size: 4rem;
+        font-size: 3.5rem;
         color: #c0ad03;
     }
 
@@ -645,7 +636,7 @@ video{
 
     .pieDePagina__section__item--especifico:hover{
         background-color: rgba(214, 208, 208, 0.534);
-        border-radius: 10px;
+        border-radius: 15px;
     }
     .pieDePagina__section__titulo{
         margin-left: 0;
@@ -732,8 +723,40 @@ video{
 }
 /*                  --------------------DESKTOP--------------------                    */
 
+@media(min-width: 1400px){
+
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<INDEX>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    .slide{
+        overflow-x: hidden;
+    }
+
+    .pieDePagina__section__titulo{
+        font-size: 2.2rem;
+    }
+
+    .pieDePagina__section__item{
+        font-size: 2rem;
+    }
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<INDEX>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+}
+
 /*                  --------------------DESKTOP(4K)--------------------                    */
 @media (min-width: 1680px){
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<INDEX>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    .nov__img{
+        width: 100vh;
+    }
+
+    .pieDePagina__section__email{
+        height: 3rem;
+    }
+
+    .pieDePagina__section__boton{
+        height: 3rem;
+    }
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<INDEX>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+
     /*              <<<<<<<<<<<<<<<<<<<<<<<<<<CARTA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
     .articulo__titulo{
         font-size: 3rem;
